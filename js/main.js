@@ -1,11 +1,17 @@
 /**
  * Fichier de base pour application web HTML/CSS/JS
- * @author  Steve Fallet
+ * @author  Soane Bernon
  * @version 0.2
- * @since   2019-08-19
+ * @since   05.09.2023
  */
 'use strict'; // Demande un interprétation stricte du code
 
-let a = 'Bonjour';
+let degresC = parseInt(prompt("Température en celsius "));
 
-console.log(a);
+if (isNaN(degresC)) {
+    alert(`Veuillez noter un nombre de degres !`);
+}
+else {
+    let degresF = degresC * 9 / 5 + 32;
+    alert(degresC + "°C = " + degresF + "°F");
+}
