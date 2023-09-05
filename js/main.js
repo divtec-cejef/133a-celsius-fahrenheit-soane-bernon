@@ -10,8 +10,7 @@ let degresC = parseInt(prompt("Température en celsius "));
 
 if (isNaN(degresC)) {
     alert(`Veuillez noter un nombre de degres !`);
-}
-else {
+} else {
     let degresF = degresC * 9 / 5 + 32;
-    alert(degresC + "°C = " + degresF + "°F");
+    alert(`${degresC} °C = ${degresF} °F`);
 }
